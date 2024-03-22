@@ -8,7 +8,7 @@ install.packages('manipulate')
 
 #RedCAP API export
 data1 <- redcap_read_oneshot(redcap_uri = "https://global.redcap.unc.edu/api/",
-                             token = "5CC8E4D3991A0AE6E0FCF96E9633A7D5")$data
+                             token = "")$data
 
 #Hep B tested subset
 HepB <- subset(data1, !is.na(v1_hbv_res))
